@@ -2,8 +2,10 @@ header {
   display: flex;
   justify-content: flex-end;
   margin: 15px 25px;
-  // border: solid blue;
-}
-header > img {
-  padding-left: 10px;;
+  img {
+    padding-left: 10px;
+    &:hover {
+      cursor: grab;
+    }
+  }
 }
