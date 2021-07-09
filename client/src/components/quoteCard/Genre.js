@@ -1,13 +1,10 @@
 import React from "react";
 
-const Genre = ({ className }) => {
+const Genre = ({ className, author, category }) => {
   return (
     <div className={className}>
-      <h1>Bill Gates</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Exercitationem, natus. Labore natus quaerat veniam dolore inventore.
-      </p>
+      <h1>{author}</h1>
+      <p>{category}</p>
     </div>
   );
 };

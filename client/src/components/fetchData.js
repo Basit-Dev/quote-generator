@@ -33,37 +33,30 @@ class FetchData extends React.Component {
       );
   }
 
-  dataMap = () => {
+  render() {
     const { error, isLoaded, items } = this.state;
     if (error) {
-      return <div>Error: {error.message}</div>;
+      return <Quotes displayQuote={`Error: ${error.message}`} />;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <Quotes displayQuote={"...Loading"} />;
     } else {
       return (
         <>
-          {items.map((data) => (
-            <div key={data._id}>
-              <q>{data.quoteText}</q>
-            </div>
-          ))}
-        </>
-      );
-    }
-  };
-
-  render() {
-    return (
-      <>
-        <div className="container">
           <RandomHeader
             handleClick={() => this.componentDidMount()}
             image={SyncImage}
           />
-          <Quotes data={this.dataMap()} />
-        </div>
-      </>
-    );
+          {items.map((data) => (
+            <Quotes
+              key={data.id}
+              displayQuote={data.quoteText}
+              quoteAuthor={data.quoteAuthor}
+              quoteGenre={data.quoteGenre}
+            />
+          ))}
+        </>
+      );
+    }
   }
 }
 export default FetchData;
