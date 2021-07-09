@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Genre = ({ className, author, category }) => {
   return (
@@ -6,6 +6,6 @@ const Genre = ({ className, author, category }) => {
       <h1>{author}</h1>
       <p>{category}</p>
     </div>
-  );
-};
-export default Genre;
+  )
+}
+export default Genre

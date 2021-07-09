@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const RandomHeader = ({ handleClick, image }) => {
   return (
@@ -6,7 +6,7 @@ const RandomHeader = ({ handleClick, image }) => {
       random
       <img onClick={handleClick} src={image} alt="sync" />
     </header>
-  );
-};
+  )
+}
 
-export default RandomHeader;
+export default RandomHeader
