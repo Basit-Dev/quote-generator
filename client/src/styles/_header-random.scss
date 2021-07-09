@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 35px 50px 0 0;
+  img {
+    padding-left: 10px;
+    &:hover {
+      cursor: grab;
+    }
+  }
+}

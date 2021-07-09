@@ -1,11 +1,12 @@
-import "./App.css";
+import React from 'react'
+import FetchData from './components/fetchData'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Hello World!</header>
+    <div className="container">
+      <FetchData />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

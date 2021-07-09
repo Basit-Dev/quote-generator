@@ -1,0 +1,34 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+
+  .quote-card {
+    width: 50%;
+    max-width: 800px;
+
+    &__quote {
+      border-left: solid orange;
+      border-width: 3px;
+      padding: 30px;
+      line-height: 140%;
+    }
+
+    &__genre {
+      padding: 30px;
+      text-align: left;
+
+      h1 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
